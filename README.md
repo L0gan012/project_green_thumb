@@ -1,3 +1,5 @@
+# Project Green Thumb
+
 This project was created to help Logan not kill his plants.
 
 It will store moisture and temperature data for all the plants in his apartment.
