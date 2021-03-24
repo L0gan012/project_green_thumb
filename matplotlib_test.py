@@ -1,22 +1,16 @@
-from graph import graph
-import matplotlib.pyplot as plt
-import pandas as pd
-import numpy as np
+import database as db
 
-from plant import plant
 from graph import graph
 
 def main():
 
-    aloe = plant("Aloe")
-    big_root = plant("Big Root")
-    succulent = plant("Suculant")
+    cur = db.create_cursor("./plant_data")
 
-    plants = [aloe, big_root, succulent]
+    db.add_plant(cur)
 
-    moisture = graph("Moisture Over Time", "Time (days)", "Moisture level", plants)
-    temp = graph("Temp Over Time", "Time (Days)", "Temp. (Degrees F)", plants)
+    #moisture = graph("Moisture Over Time", "Time (days)", "Moisture level", plants)
+    #temp = graph("Temp Over Time", "Time (Days)", "Temp. (Degrees F)", plants)
 
-    moisture.show_graph()
+    #moisture.show_graph()
 
 main()
