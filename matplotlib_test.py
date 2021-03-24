@@ -1,16 +1,22 @@
-import database as db
-
-from graph import graph
+from database import database
 
 def main():
 
-    cur = db.create_cursor("./plant_data")
+    db = database("./plant_data.db")
 
-    db.add_plant(cur)
+    print("Welcome to the plant database!")
 
-    #moisture = graph("Moisture Over Time", "Time (days)", "Moisture level", plants)
-    #temp = graph("Temp Over Time", "Time (Days)", "Temp. (Degrees F)", plants)
-
-    #moisture.show_graph()
+    user_choices = {'a':db.add_plant, 's':db.get_plants, 'g': ""}
+    
+    while(True):
+        print("To add a plant press (a)")
+        print("To view plants press (s)")
+        print("To view temperature/humidity graphs press (g)")
+        print("To exit press (x)")
+        choice = input("Please select an option: ")
+        if(choice == 'x'):
+            break
+        func = user_choices.get(choice)
+        func()
 
 main()
