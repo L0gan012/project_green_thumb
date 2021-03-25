@@ -1,3 +1,46 @@
-body {
-    background-color: aquamarine;
+*{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+}
+
+h1{
+    font-size: 8vw;
+    text-align: center;
+}
+
+h2{
+    font-size: 4vw;
+    text-align: center;
+}
+
+.header{
+    background-image: url(https://image.freepik.com/free-vector/plant-succulents-potted-ceramic-cartoon-doodle-line-set-color-linear-flat-house-indoor-flower-house-plants-cactus-monstera-aloe-flowerpot-interior-decor-collection-illustration_221062-179.jpg);
+    background-repeat: repeat-x;
+}
+
+#nav{
+    background-color: rgba(200,200,200,.5);
+    text-align: right;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#nav li{
+    font-size: 2vw;
+    display: inline;
+}
+
+#description{
+    height: 500px;
+    width: 100%;
+}
+
+#graphs{
+    height: 1000px;
+    width: 100%;
+}
+
+#photos{
+    height: 500px;
+    width: 100%;
 }
