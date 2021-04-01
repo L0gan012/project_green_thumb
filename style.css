@@ -1,46 +1,93 @@
 *{
     font-family: 'Roboto Mono', monospace;
+    padding: 0;
     margin: 0;
 }
 
-h1{
-    font-size: 8vw;
-    text-align: center;
-}
-
-h2{
-    font-size: 4vw;
-    text-align: center;
-}
-
-.header{
+/* Header */
+header {
+    min-height: 75px;
+    max-height: 125px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-image: url(https://image.freepik.com/free-vector/plant-succulents-potted-ceramic-cartoon-doodle-line-set-color-linear-flat-house-indoor-flower-house-plants-cactus-monstera-aloe-flowerpot-interior-decor-collection-illustration_221062-179.jpg);
     background-repeat: repeat-x;
 }
 
-#nav{
-    background-color: rgba(200,200,200,.5);
-    text-align: right;
-    padding-top: 1%;
-    padding-bottom: 1%;
-}
-
-#nav li{
+/* Logo */
+.logo h1{
     font-size: 2vw;
-    display: inline;
+    font-weight: bold;
+    letter-spacing: .5em;
+    margin: 10px 20px;
+    transition: font-size 1s;
 }
 
-#description{
-    height: 500px;
-    width: 100%;
+.logo h1:hover {
+    font-size: 2.5vw;
+    cursor: pointer;
 }
 
-#graphs{
-    height: 1000px;
-    width: 100%;
+/* Navigation bar */
+nav {
+    height: 100%;
+    width: 40%;
 }
 
-#photos{
-    height: 500px;
-    width: 100%;
+.nav-links {
+    height: inherit;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-link {
+    background-color: hsla(0,0%,75%,1);
+    color: hsla(0,0%,25%,1);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-link:hover, .dropdown-menu:hover .nav-link {
+    background-color: hsla(0,0%,50%,1);
+    color: hsla(0,0%,90%,1);
+}
+
+.dropdown-menu {
+    position: relative;
+}
+
+.dropdown-content {
+    background-color: hsla(0,0%,75%,1);
+    padding: inherit;
+    min-width: 250px;
+    border-radius: 20px;
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    background-color: hsla(0,0%,75%,1);
+    color: hsla(0,0%,25%,1);
+    padding: 15px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: hsla(0,0%,50%,1);
+    color: hsla(0,0%,90%,1);
+}
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
 }

@@ -8,31 +8,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <!--This is the header-->
         <header class="header">
-            <h1>Project Green Thumb</h1>
+            <div class="logo">
+                <h1>Project Green Thumb</h1>
+            </div>
+            <!--This is the nav bar-->
+            <nav>
+                <ul class="nav-links">
+                    <li><a class="nav-link" href="#description" type="internal">Description</a></li>
+                    <li class="dropdown-menu">
+                        <a class="nav-link" href="#graphs" type="internal">Graphs</a>
+                        <div class="dropdown-content">
+                            <a href="#moisture-graph" type="internal">Moisture</a>
+                            <a href="#tempurateure-graph" type="internal">Temperature</a>
+                        </div>
+                    </li>
+                    <li class="dropdown-menu">
+                        <a class="nav-link" href="#photos" type="internal">Photos</a>
+                        <div class="dropdown-content">
+                            <a href="#scematics" type="internal">Wire Scematics</a>
+                            <a href="#environment" type="internal">Practical</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <!--This is the nav bar-->
-        <ul id="nav">
-            <li><a class="nav_link" href="#description" type="internal">Description</a></li>
-            <li><a class="nav_link" href="#graphs" type="internal">Graphs</a></li>
-            <li><a class="nav_link" href="#photos" type="internal">Photos</a></li>
-        </ul>
         <!--Description section-->
-        <div id="description">
-            <h2>Description</h2>
-        </div>
+        <section id="description">
+
+        </section>
         <!--Graphs section-->
-        <div id="graphs">
+        <section id="graphs">
 
-        </div>
+        </section>
         <!--Photos section-->
-        <div id="photos">
+        <section id="photos">
 
-        </div>
+        </section>
     </body>
 </html>
